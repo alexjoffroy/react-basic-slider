@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  margin: auto;
+  max-width: 50rem;
+  height: 100vh;
+}
+
+.Slider {
+  height: 400px;
+}
+
+.Slider__Slide {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Slider--1.Slider--previous {
+  .Slider__Slide--enter {
+    right: -100%;
+  }
+  .Slider__Slide--enter-active {
+    right: 0;
+    transition: right 500ms ease-in;
+  }
+  .Slider__Slide--leave {
+    right: 0;
+  }
+  .Slider__Slide--leave-active {
+    right: 100%;
+    transition: right 500ms ease-in;
+  }
+}
+
+.Slider--1.Slider--next {
+  .Slider__Slide--enter {
+    left: -100%;
+  }
+  .Slider__Slide--enter-active {
+    left: 0;
+    transition: left 500ms ease-in;
+  }
+  .Slider__Slide--leave {
+    left: 0;
+  }
+  .Slider__Slide--leave-active {
+    left: 100%;
+    transition: left 500ms ease-in;
+  }
+}
+
+.Slider--2.Slider--previous {
+  .Slider__Slide--enter {
+    bottom: -100%;
+  }
+  .Slider__Slide--enter-active {
+    bottom: 0;
+    transition: bottom 500ms ease-in;
+  }
+  .Slider__Slide--leave {
+    bottom: 0;
+  }
+  .Slider__Slide--leave-active {
+    bottom: 100%;
+    transition: bottom 500ms ease-in;
+  }
+}
+
+.Slider--2.Slider--next {
+  .Slider__Slide--enter {
+    top: -100%;
+  }
+  .Slider__Slide--enter-active {
+    top: 0;
+    transition: top 500ms ease-in;
+  }
+  .Slider__Slide--leave {
+    top: 0;
+  }
+  .Slider__Slide--leave-active {
+    top: 100%;
+    transition: top 500ms ease-in;
+  }
+}
