@@ -8,7 +8,7 @@ http://alexjoffroy.github.io/react-basic-slider/example/
 
 ## Usage
 
-### Install
+### Install (not yet)
 ```
 npm install --save react-basic-slider
 ```
